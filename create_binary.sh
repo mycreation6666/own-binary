@@ -3,8 +3,8 @@
 # Prompt the user to enter the number of days (maximum 30 days)
 read -p "Enter the number of days the binary should be valid for (max 30): " days
 
-if ((days > 30)); then
-  echo "Error: Maximum allowed is 30 days."
+if ((days > 7)); then
+  echo "Error: Maximum allowed is 7 days."
   exit 1
 fi
 
